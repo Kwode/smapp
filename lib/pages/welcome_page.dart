@@ -44,6 +44,7 @@ class WelcomePage extends StatelessWidget {
 
                 SizedBox(height: 60,),
 
+                //get started button
                 GestureDetector(
                   onTap: navToSignUp,
                   child: Container(
