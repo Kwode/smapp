@@ -8,11 +8,31 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
-        child: Text(
-          "WELCOME TO LOGIN",
-          style: TextStyle(
-            color: Colors.white,
-          ),
+        child: Column(
+          children: [
+            //profile icon
+            Icon(
+              Icons.person_2,
+            ),
+            //textfields
+            TextField(
+              decoration: InputDecoration(
+                hintText: "Email",
+                border: OutlineInputBorder(),
+              ),
+            ),
+
+            TextField(
+              obscureText: true,
+              decoration: InputDecoration(
+                hintText: "Email",
+                border: OutlineInputBorder(),
+              ),
+            ),
+            //sign in button
+            //Don't have an account?
+            //sign in with google
+          ],
         ),
       ),
     );

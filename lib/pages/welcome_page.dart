@@ -24,10 +24,12 @@ class WelcomePage extends StatelessWidget {
         children: [
           SizedBox(height: 20,),
 
+          //pictures at the top
           Expanded(
               child: Pfp()
           ),
-          
+
+          //text
           Expanded(
             child: Column(
               children: [
@@ -42,29 +44,30 @@ class WelcomePage extends StatelessWidget {
 
                 SizedBox(height: 60,),
 
-                Container(
-                  height: 50,
-                  width: 200,
-                  decoration: BoxDecoration(
-                    color: Colors.blue[500],
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Center(
-                    child: GestureDetector(
-                      onTap: navToSignUp,
-                      child: Text(
-                        "Get Started",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                GestureDetector(
+                  onTap: navToSignUp,
+                  child: Container(
+                    height: 50,
+                    width: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.blue[500],
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Center(
+                        child: Text(
+                          "Get Started",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
                     ),
                   ),
                 ),
 
                 SizedBox(height: 8,),
 
+                //key to login
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -77,14 +80,15 @@ class WelcomePage extends StatelessWidget {
 
                     SizedBox(width: 5,),
 
+                    //sign in text
                     GestureDetector(
                       onTap: navToLogin,
-                      child: Text(
-                            "Sign In",
-                            style: TextStyle(
-                              color: Colors.blue[500],
-                            ),
-                          ),
+                        child: Text(
+                              "Sign In",
+                              style: TextStyle(
+                                color: Colors.blue[500],
+                              ),
+                        ),
                     ),
                   ],
                 )
